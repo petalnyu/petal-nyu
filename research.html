@@ -63,6 +63,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Fallback click handler for article links.
+        // If the browser blocks the usual target="_blank" navigation, this will
+        // attempt to open a new window, and fall back to same-tab navigation.
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('.article-block a');
+            links.forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    // Prevent default to handle navigation ourselves reliably
+                    e.preventDefault();
+                    var href = a.getAttribute('href');
+                    // Try to open in a new tab/window first
+                    var win = window.open(href, '_blank');
+                    // If popup blocked (win is null), navigate in the same tab
+                    if (!win) {
+                        window.location.href = href;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 

@@ -86,6 +86,35 @@ header {
     color: white;
 }
 
+/* Research & Publications */
+
+.article-block a {
+    /* Style the anchor tag to look like a block */
+    display: block; /* Makes the link take up the full space of its container */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-decoration: none; /* Removes the default underline from the link */
+    color: inherit; /* Keeps text color consistent */
+    position: relative; /* ensures z-index works if needed */
+    z-index: 2; /* keep link above nearby elements */
+    pointer-events: auto; /* ensure clicks reach the anchor */
+    
+    /* Optional: Add hover effect to indicate it's clickable */
+    transition: background-color 0.3s;
+}
+
+.article-block a:hover {
+    background-color: #f5f5f5;
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
+}
+
+/* Ensure headings/paragraphs inside the link inherit styles correctly */
+.article-block h2 {
+    /* styles for the title */
+    margin-top: 0;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-blue), var(--purple-blue));
@@ -217,7 +246,7 @@ section {
 }
 
 .member-role {
-    color: var(--yellow);
+    color: black;
     font-weight: bold;
     margin-bottom: 15px;
 }
