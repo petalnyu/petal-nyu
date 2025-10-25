@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<!-- Create the container for all hero content -->
+<main class="hero-section">
+  <div class="hero-content">
+    <!-- Main exhibit: title of the org -->
+    <!-- TODO: replace with artwork? -->
+    <h1 class="hero-title">{{ page.hero_title | default: page.title }}</h1>
+
+    <!-- Managed content -->
+    <div class="hero-description">
+      {{ content }}
+    </div>
+    {% if page.buttons %}
+    <div class="hero-buttons">
+      {% for button in page.buttons %}
+      <a href="{{ button.url }}" class="btn {{ button.style | default: 'btn-primary' }}">
+        <span class="btn-icon">{{ button.icon | default: '↗' }}</span>
+        {{ button.text }}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</main>
