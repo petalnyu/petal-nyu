@@ -1,7 +1,7 @@
 ---
 layout: home
 title: PETAL
-hero_title: PETAL
+hero_title: petal
 buttons:
   - text: "Learn More"
     url: "/about"
@@ -13,4 +13,4 @@ buttons:
     style: "btn-secondary"
 ---
 
-We are an NYU club dedicated to the exploring the intersection between technology, ethics, and policy.
+We are an NYU club dedicated to the exploring the intersection of technology, ethics, law, and policy.
