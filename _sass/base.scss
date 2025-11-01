@@ -1,4 +1,4 @@
-$cream: #c3af72;
+$background: #e9ffde;
 $black: #000000;
 $gray: #666666;
 
@@ -7,7 +7,7 @@ body {
   line-height: 1.5;
   margin: 0;
   color: $black;
-  background: $cream;
+  background: $background;
 }
 
 .site-header {
@@ -19,18 +19,26 @@ body {
   justify-content: space-between;
   align-items: center;
   background: transparent;
+  z-index: 100;
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: normal;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 0;
+  display: block;
+  
+  &:hover .logo-img {
+    opacity: 0.7;
+  }
 }
 
 .logo-img {
   width: 4rem;
-  // backdrop-filter: blur(10px);
   border-radius: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.3s ease;
+  display: block;
 }
 
 .menu-toggle {
@@ -56,44 +64,7 @@ body {
   span {
     width: 20px;
     height: 2px;
-    background: $cream;
+    background: $background;
     display: block;
   }
 }
-
-// :root {
-//     --primary: #4B8CDB;
-//     --primary-var: #0A2342;
-//     --secondary: #FFD050;
-//     --secondary-var: #91C7B1;
-// }
-
-// header {
-//     background-color: var(--secondary);
-// }
-
-// .nav-container {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 0 40px;
-// }
-
-// .home-button {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     text-decoration: none;
-// }
-
-// .nav-menu {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-evenly;
-//     gap: 40px;
-// }
-
-// .nav-menu a {
-//     text-decoration: none;
-// }
