@@ -1,6 +1,5 @@
 ---
 layout: home
-title: PETAL
 hero_title: petal
 buttons:
   - text: "Who We Are"
