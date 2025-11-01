@@ -30,12 +30,10 @@
 }
 
 .team-member h3 {
-    color: var(--medium-blue);
     margin-bottom: 5px;
 }
 
 .member-role {
-    color: var(--yellow);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -43,4 +41,8 @@
 .team-member p:last-child {
     color: #555;
     font-size: 0.9rem;
+}
+
+a {
+    color: $medium-blue
 }

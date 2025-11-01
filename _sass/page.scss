@@ -2,13 +2,42 @@
 
 // This is for actual pages that aren't the home
 .page-header {
-  background: linear-gradient(150deg, $purple-blue, $yellow);
+  background: linear-gradient(150deg, $purple-blue, $light-blue);
   padding: 40px 0;
   text-align: center;
 }
 
 .page-section {
-  border: solid 2px $light-blue;
   margin: 40px 40px;
   padding: 20px 40px;
 }
+
+.container {
+  display: flex; /* Makes the container a flex container */
+  justify-content: space-between; /* Distributes space between columns */
+  gap: 10px; /* Adds a gap between columns */
+}
+
+.column {
+  flex: 1; /* Allows columns to grow and shrink equally */
+  padding: 10px;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    margin-left: 20%;
+  }
+
+  ol {
+    margin-left: 20%;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
