@@ -3,15 +3,15 @@ layout: home
 hero_title: petal
 buttons:
   - text: "Meet the Team"
-    url: "{{ site.baseurl }}/team/"
+    url: "/petal-nyu/team/"
     icon: ""
     style: "btn-secondary"
   - text: "Resources"
-    url: "{{ site.baseurl }}/resources/"
+    url: "/petal-nyu/resources/"
     icon: ""
     style: "btn-secondary"
   - text: "See Events"
-    url: "{{ site.baseurl }}/events/"
+    url: "/petal-nyu/events/"
     icon: ""
 permalink: /
 ---
