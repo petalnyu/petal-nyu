@@ -1,0 +1,85 @@
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // top | left & right | bottom
+  padding: 5rem 2rem 3rem;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 12vw, 10rem);
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 2rem 0;
+  line-height: 1;
+  color: $black;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  line-height: 1.6;
+  color: $black;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+
+  // strong {
+  //   text-decoration: underline;
+  //   text-decoration-thickness: 2px;
+  //   text-underline-offset: 4px;
+  //   font-weight: normal;
+  // }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: $black;
+  color: white;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $black;
+  border: 2px solid $black;
+
+  &:hover {
+    background: $black;
+    color: white;
+  }
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}

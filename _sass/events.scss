@@ -1,0 +1,13 @@
+@import "_variables.scss";
+
+.iframe-container {
+  text-align: center; /* Centers the iframe horizontally */
+}
+
+.iframe-container iframe {
+  display: inline-block; /* Ensures the iframe is treated as an inline element for centering */
+}
+
+.center {
+  text-align: center;
+}

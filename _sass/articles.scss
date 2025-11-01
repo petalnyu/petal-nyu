@@ -1,0 +1,118 @@
+/* Articles specific styles harmonized with site design */
+:root {
+    --article-max-width: 920px;
+    --article-padding: 24px;
+    --article-margin: 32px auto;
+    --article-bg: var(--light-gray);
+    --article-border-radius: 8px;
+    --article-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Use the same base typography as the site for consistency */
+body.article-page {
+    font-family: var(--font-primary, 'Arial', sans-serif);
+    background: var(--background-color, #f9f9f9);
+    color: var(--text-color, #333);
+}
+
+.article-container {
+    max-width: var(--article-max-width);
+    margin: var(--article-margin);
+    padding: var(--article-padding);
+    line-height: 1.7;
+    background: var(--article-bg);
+    border-radius: var(--article-border-radius);
+    box-shadow: var(--article-shadow);
+    border-left: 4px solid var(--accent-color, var(--yellow));
+}
+
+.article-title {
+    color: var(--primary-color, var(--medium-blue));
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-family: var(--font-secondary, 'Miriam Libre', 'Arial', sans-serif);
+}
+
+.article-byline {
+    color: var(--secondary-text-color, var(--gray));
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+}
+
+.article-container p {
+    margin-bottom: 1rem;
+    font-size: 1.03rem;
+    color: var(--text-color, #333);
+}
+
+.article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.article-container blockquote {
+    border-left: 4px solid var(--secondary-accent-color, var(--light-blue));
+    padding-left: 16px;
+    color: var(--text-muted, #444);
+    margin: 20px 0;
+}
+
+.article-container a {
+    color: var(--link-color, var(--primary-blue));
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .article-container {
+        margin: 16px;
+        padding: 16px;
+    }
+    .article-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Video / iframe styling: center and scale proportionally */
+.article-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+}
+
+.article-figure .media {
+    width: 100%;
+    max-width: 880px;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+.article-figure iframe,
+.article-figure video,
+.article-figure embed {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.article-figure figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: var(--secondary-text-color, var(--gray));
+    text-align: center;
+    max-width: 880px;
+}
+
+@media (max-width: 900px) {
+    .article-figure .media {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    .article-figure figcaption {
+        padding: 0 12px;
+    }
+}
