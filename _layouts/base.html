@@ -49,7 +49,7 @@
 
 <body>
   <header class="site-header">
-    <a href="https://petalnyu.github.io/petal-nyu/">
+    <a href="{{ '/' | relative_url }}">
       <img class="logo-img" src="{{ '/assets/petal_logo.png' | relative_url }}">
     </a>
     <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
@@ -58,11 +58,11 @@
       <span></span>
     </button>
     <nav class="menu">
-      <a href="/petal-nyu/events/">Events</a>
-      <a href="/petal-nyu/resources/">Resources</a>
-      <a href="/petal-nyu/team/">Team</a>
-      <a href="/petal-nyu/articles/">Articles
-        
+        <a href="{{ '/events/' | relative_url }}">Events</a>
+        <a href="{{ '/resources/' | relative_url }}">Resources</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
+        <a href="{{ '/articles/' | relative_url }}">Articles</a>
+                
       </a>
     </nav>
   </header>
