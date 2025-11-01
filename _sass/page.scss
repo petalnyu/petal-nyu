@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+// This is for actual pages that aren't the home
+.page-header {
+  background: linear-gradient(150deg, $purple-blue, $yellow);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.page-section {
+  border: solid 2px $light-blue;
+  margin: 40px 40px;
+  padding: 20px 40px;
+}

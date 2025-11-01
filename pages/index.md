@@ -2,8 +2,8 @@
 layout: home
 hero_title: petal
 buttons:
-  - text: "Who We Are"
-    url: "/who"
+  - text: "Meet the Team"
+    url: "/team"
     icon: ""
     style: "btn-secondary"
   - text: "See Events"

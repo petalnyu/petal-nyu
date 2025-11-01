@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<div class="team-grid">
+  {% for member in page.team %}
+  <div class="team-member">
+    <div class="member-photo">
+      <!-- TODO: INSERT PHOTO HERE -->
+    </div>
+    <h3>{{ member.name }}</h3>
+    <p>{{ member.role }}</p>
+    <p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Want to Join Our Team?</h2>
+<p>We're always looking for passionate individuals who want to make a difference in technology policy. Whether
+  you're a student, professional, or simply interested in the field, there's a place for you at PETAL.</p>
+<p>Contact us to learn more about available positions and volunteer opportunities.</p>

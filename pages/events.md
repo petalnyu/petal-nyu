@@ -1,7 +1,6 @@
 ---
 layout: events
 title: Events
+description: Join us for discussions, workshops, social hours, panels, and more!
 permalink: /events/
 ---
-
-Subscribe to our Google Calendar to stay updated on events happening in NYU and NYC!
