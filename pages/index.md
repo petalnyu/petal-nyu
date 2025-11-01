@@ -3,15 +3,15 @@ layout: home
 hero_title: petal
 buttons:
   - text: "Meet the Team"
-    url: "/team"
+    url: "{{ site.baseurl }}/team"
     icon: ""
     style: "btn-secondary"
   - text: "Resources"
-    url: "/resources"
+    url: "{{ site.baseurl }}/resources"
     icon: ""
     style: "btn-secondary"
   - text: "See Events"
-    url: "/events"
+    url: "{{ site.baseurl }}/events"
     icon: ""
 permalink: /
 ---
