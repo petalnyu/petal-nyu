@@ -2,7 +2,11 @@
 layout: home
 hero_title: petal
 buttons:
-  - text: "Meet the Team"
+  - text: "Mailing List"
+    url: 'https://forms.gle/AZM6xXA7okppiksc9'
+    icon: ""
+    style: "btn-secondary"
+  - text: "Team"
     url: "/petal-nyu/team/"
     icon: ""
     style: "btn-secondary"
