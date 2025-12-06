@@ -8,43 +8,6 @@
   <link rel="icon" href="{{ 'assets/petal_logo.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    .menu {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      right: -400px;
-      width: 250px;
-      height: 30%;
-      background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-      box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
-      transition: right 0.3s ease;
-      padding: 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: black;
-      padding: 15px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .menu a:last-child {
-      border-bottom: none;
-    }
-
-    .menu.active {
-      right: 0;
-    }
-
-    .menu-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-  </style>
 </head>
 
 <body>
@@ -58,11 +21,10 @@
       <span></span>
     </button>
     <nav class="menu">
-        <a href="{{ '/events/' | relative_url }}">Events</a>
-        <a href="{{ '/resources/' | relative_url }}">Resources</a>
-        <a href="{{ '/team/' | relative_url }}">Team</a>
-        <a href="{{ '/articles/' | relative_url }}">Articles</a>
-                
+      <a href="{{ '/events/' | relative_url }}">Events</a>
+      <a href="{{ '/resources/' | relative_url }}">Resources</a>
+      <a href="{{ '/team/' | relative_url }}">Team</a>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
       </a>
     </nav>
   </header>
