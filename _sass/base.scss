@@ -1,5 +1,14 @@
 @import "_variables.scss";
 
+// Set site defaults
+body {
+  font-family: 'Miriam Libre', 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  margin: 0;
+  color: $black;
+  background: $background;
+}
+
 // This is for meta header, home link and menu button
 .site-header {
   position: fixed;
@@ -43,6 +52,7 @@
   gap: 4px;
   transition: transform 0.3s ease;
   transition: opacity 0.3s ease;
+  z-index: 102;
 
   &:hover {
     transform: scale(1.05);
@@ -57,11 +67,39 @@
   }
 }
 
-// Set site defaults
-body {
-  font-family: 'Miriam Libre', 'Times New Roman', Times, serif;
-  line-height: 1.5;
-  margin: 0;
-  color: $black;
-  background: $background;
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 250px;
+  height: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Slightly transparent white */
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 101;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.menu a:last-child {
+  border-bottom: none;
+}
+
+.menu.active {
+  right: 0;
 }

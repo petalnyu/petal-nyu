@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<div class="article-container">
+  <h1>
+    <em>{{ page.title }}</em>
+  </h1>
+
+  <p class="article-byline">
+    By <strong>{{ page.author }}</strong> | {{ page.date | date: "%B %d, %Y" }}
+  </p>
+
+  {{ content }}
+</div>

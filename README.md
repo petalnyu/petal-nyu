@@ -11,3 +11,8 @@ cd petal-nyu
 gem install bundler jekyll jekyll-feed
 bundle exec jekyll serve
 ```
+
+### TODO
+- [ ] Better looking article listing
+- [ ] Footer with links & contact
+- [ ] More complete home page (articles listing, mission statement, etc)
