@@ -5,9 +5,8 @@ layout: page
 <div class="team-grid">
   {% for member in page.team %}
   <div class="team-member">
-    <div class="member-photo">
-      <!-- TODO: INSERT PHOTO HERE -->
-    </div>
+    <img src="../assets/team/{{ member.name }}.{{ member.photo_ext | default: 'jpg' }}" alt="photo"
+      class="member-photo">
     <h3>{{ member.name }}</h3>
     <p>{{ member.role }}</p>
     <p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
@@ -15,6 +14,10 @@ layout: page
   {% endfor %}
 </div>
 
-<h2>Want to Join Our Team?</h2>
-<p>We're always looking for passionate individuals who want to make a difference in technology policy. Whether
-  you're a student, professional, or simply interested in the field, there's a place for you at PETAL. Contact us at <a href=mailto:petal.leadership@nyu.edu> petal.leadership@nyu.edu</a> to learn more about available positions and volunteer opportunities.</p>
+<div class="join-msg">
+  <h2>Want to Join Our Team?</h2>
+  <p>We're always looking for passionate individuals who want to make a difference in technology policy. Whether
+    you're a student, professional, or simply interested in the field, there's a place for you at PETAL. Contact us at
+    <a href=mailto:petal.leadership@nyu.edu> petal.leadership@nyu.edu</a> to learn more about available positions and
+    volunteer opportunities.</p>
+</div>
