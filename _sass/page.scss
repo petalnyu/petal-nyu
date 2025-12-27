@@ -41,3 +41,28 @@
   }
 }
 
+/* Resources page grid layout */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin: 20px 40px;
+  align-items: start;
+}
+
+/* Tweak column styles when inside the resources grid */
+.resources-grid .column {
+  padding: 16px;
+}
+
+.resources-grid .column h1,
+.resources-grid .column p {
+  text-align: left;
+}
+
+.resources-grid .column ol {
+  margin-left: 0;
+  padding-left: 1.25rem; /* keeps bullets aligned */
+  list-style-position: outside;
+}
+

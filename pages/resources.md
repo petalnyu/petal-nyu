@@ -3,6 +3,7 @@ layout: resources
 title: Resources
 permalink: /resources/
 resources:
+
   - title: "NYU Specific"
     items:
       - title: "Recommended courses (grad/undergrad)"
@@ -53,9 +54,7 @@ resources:
         url: "https://www.nytimes.com/column/hard-fork"
       - title: "Fairness and Machine Learning (book)"
         url: "https://fairmlbook.org/"
-        note: "Barocas, Hardt, Narayanan"
       - title: "Undergraduate Advice - Emerging Tech Policy Careers"
         url: "https://emergingtechpolicy.org/pathways/undergraduate-advice/"
 ---
 
-<!-- Optional body content if needed -->
