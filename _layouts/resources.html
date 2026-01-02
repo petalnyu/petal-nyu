@@ -20,6 +20,22 @@ layout: page
         {{ item.title | default: item.name }}
         {% endif %}
         {% if item.note %}<span class="item-note"> — {{ item.note }}</span>{% endif %}
+
+        {% if item.items %}
+        <ul>
+          {% for sub in item.items %}
+          <li>
+            {% if sub.url %}
+            <a href="{{ sub.url }}">{{ sub.title | default: sub.name }}</a>
+            {% else %}
+            {{ sub.title | default: sub.name }}
+            {% endif %}
+            {% if sub.note %}<span class="item-note"> — {{ sub.note }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
       </li>
       {% endfor %}
     </ol>

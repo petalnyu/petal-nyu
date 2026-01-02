@@ -31,8 +31,18 @@ resources:
         url: "https://datasociety.net/"
       - title: "PPIA Fellowship"
         url: "https://www.ppiaprogram.org/fellowship"
-      - title: "Decoded Futures Volunteer"
+
+  - title: "Volunteering"
+    items:
+      - title: "Decoded Futures (cohort-based)"
         url: "https://www.decodedfutures.nyc/ai-volunteer"
+      - title: "Electronic Frontier Foundation"
+        url: "https://www.eff.org/about"
+        items:
+          - title: "Coding"
+            url: "https://www.eff.org/about/opportunities/volunteer/coding-with-eff"
+          - title: "Translating"
+            url: "https://join.eff.org/Translators/"
 
   - title: "Journalism"
     items:
