@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Maimed by Trauma; The Implications of Automated Warfare on Drone Pilots"
+title: "Maimed by Trauma: The Implications of Automated Warfare on Drone Pilots"
 date: 2026-01-20
 author: Allie Difede
 author_bio: "Hi! My name is Allie and I am from California. I am a Joint Computer Science and Data Science major at NYU. I would eventually like to go to law school and work in tech regulation or be a part of an ethics board at a tech company." 
