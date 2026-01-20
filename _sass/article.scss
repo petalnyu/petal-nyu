@@ -39,3 +39,37 @@
   text-align: center;
   max-width: 880px;
 }
+
+// Author section at bottom of articles
+.author-section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid $gray;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.author-headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-bio {
+  flex: 1;
+}
+
+.author-bio h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: $black;
+}
+
+.author-bio p {
+  margin: 0;
+  line-height: 1.6;
+  color: $black;
+}
