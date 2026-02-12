@@ -23,7 +23,20 @@ layout: base
       </div>
       {% endif %}
 
+<!-- Scroll down indicator -->
+      <a href="#about" class="scroll-indicator">
+        <span>↓</span>
+      </a>
     </div>
   </section>
 
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="about-content">
+      <h2>About Us</h2>
+      {% if page.about_content %}
+        {{ page.about_content | markdownify }}
+      {% endif %}
+    </div>
+  </section>
 </main>
