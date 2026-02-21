@@ -54,6 +54,8 @@ resources:
         url: "https://www.404media.co/"
       - title: "Tech Policy Press"
         url: "https://www.techpolicy.press/"
+      - title: "The Information"
+        url: "https://www.theinformation.com"
       - title: "Rest of World"
         url: "https://restofworld.org/"
 

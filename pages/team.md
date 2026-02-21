@@ -15,7 +15,17 @@ team:
   - name: Grace Xie
     role: Research / Opportunities Director
     email: gx2104@nyu.edu
+    photo_ext: jpg
   - name: Tarunya Dharmarajan
     role: Events / Logistics Director
     email: td2806@nyu.edu
+    photo_ext: jpg
+  - name: Safiya Farooq
+    role: Marketing Director
+    email: saf9243@nyu.edu
+    photo_ext: png
+  - name: Ogechi Okafor
+    role: Technical Programming Director
+    email: ojo2019@nyu.edu
+    photo_ext: png
 ---
