@@ -76,5 +76,14 @@ resources:
         url: "https://fairmlbook.org/"
       - title: "Undergraduate Advice - Emerging Tech Policy Careers"
         url: "https://emergingtechpolicy.org/pathways/undergraduate-advice/"
+
+  - title: "Data"
+    items:
+      - title: "Digital Policy ALert"
+        url: "https://digitalpolicyalert.org/"
+      - title: "Emerging Technology Observatory"
+        url: "https://eto.tech/datasets/"
+      - title: "Integrity Institute: Technology Policy Tracker"
+        url: "https://www.integrityinstitute.org/legislative-tracker"
 ---
 
