@@ -31,6 +31,10 @@ resources:
         url: "https://datasociety.net/"
       - title: "PPIA Fellowship"
         url: "https://www.ppiaprogram.org/fellowship"
+      - title: "S.T.O.P."
+        url: "https://www.stopspying.org/"
+      - title: "Center for Democracy and Technology"
+        url: "https://cdt.org/"
 
   - title: "Volunteering"
     items:
@@ -43,6 +47,8 @@ resources:
             url: "https://www.eff.org/about/opportunities/volunteer/coding-with-eff"
           - title: "Translating"
             url: "https://join.eff.org/Translators/"
+      - title: "AARP Senior Planet"
+        url: "https://seniorplanet.org/volunteer"
 
   - title: "Journalism"
     items:
@@ -58,6 +64,8 @@ resources:
         url: "https://www.theinformation.com"
       - title: "Rest of World"
         url: "https://restofworld.org/"
+      - title: "The Verge"
+        url: "https://www.theverge.com/"
 
   - title: "Learning"
     description: "Podcasts, books, and selected articles"
