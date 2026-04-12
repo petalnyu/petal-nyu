@@ -7,7 +7,7 @@ resources:
   - title: "NYU Specific"
     items:
       - title: "Recommended courses (grad/undergrad)"
-        url: "https://docs.google.com/spreadsheets/d/1FXFmorpG5Q7x1MtQ58RIQuAR5QTccow6D9-LrURNBPc/edit?usp=sharing"
+        url: "https://docs.google.com/spreadsheets/d/1mTHNKsvcJhbGnsTgHVcC5Jg3nBatZSfa_pNj4HWd6OI/edit?usp=sharing"
       - title: "Center on Tech Policy"
         url: "https://techpolicynyu.org/"
       - title: "Center for Data Science"
