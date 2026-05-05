@@ -1,0 +1,113 @@
+/* Articles specific styles harmonized with site design */
+:root {
+    --article-max-width: 920px;
+}
+
+/* Use the same base typography as the site for consistency */
+body.article-page {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.article-container {
+    max-width: var(--article-max-width);
+    margin: 48px auto;
+    padding: 30px;
+    line-height: 1.7;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--yellow); /* echo event-card accent */
+}
+
+.article-title {
+    color: var(--medium-blue);
+    font-size: 2rem;
+    margin-bottom: 8px;
+    font-family: 'Miriam Libre', 'Arial', sans-serif; /* match logo type feel */
+}
+
+.article-byline {
+    color: var(--gray);
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+}
+
+.article-container p {
+    margin-bottom: 1rem;
+    font-size: 1.03rem;
+    color: #333;
+}
+
+.article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.article-container blockquote {
+    border-left: 4px solid var(--light-blue);
+    padding-left: 16px;
+    color: #444;
+    margin: 20px 0;
+}
+
+.article-container a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .article-container {
+        margin: 24px 16px;
+        padding: 20px;
+    }
+    .article-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* Video / iframe styling: center and scale proportionally */
+.article-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+}
+
+.article-figure .media {
+    width: 100%;
+    max-width: 880px; /* larger max width for articles */
+    aspect-ratio: 16 / 9; /* keep videos proportional */
+    background: #000;
+}
+
+.article-figure iframe,
+.article-figure video,
+.article-figure embed {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.article-figure figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: var(--gray);
+    text-align: center;
+    max-width: 880px;
+}
+
+@media (max-width: 900px) {
+    .article-figure .media {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    .article-figure figcaption {
+        padding: 0 12px;
+    }
+}

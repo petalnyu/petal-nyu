@@ -1,0 +1,49 @@
+---
+layout: page
+---
+
+{%- assign sections = page.resources | default: site.data.resources -%}
+
+{% if sections %}
+<div class="resources-grid">
+  {% for section in sections %}
+  <div class="column">
+    <h1>{{ section.title }}</h1>
+    {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+    {% if section.items %}
+    <ol>
+      {% for item in section.items %}
+      <li style="text-align:left">
+        {% if item.url %}
+        <a href="{{ item.url }}">{{ item.title | default: item.name }}</a>
+        {% else %}
+        {{ item.title | default: item.name }}
+        {% endif %}
+        {% if item.note %}<span class="item-note"> — {{ item.note }}</span>{% endif %}
+
+        {% if item.items %}
+        <ul>
+          {% for sub in item.items %}
+          <li>
+            {% if sub.url %}
+            <a href="{{ sub.url }}">{{ sub.title | default: sub.name }}</a>
+            {% else %}
+            {{ sub.title | default: sub.name }}
+            {% endif %}
+            {% if sub.note %}<span class="item-note"> — {{ sub.note }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<!-- fallback: render page body if no frontmatter 'resources' provided -->
+{{ content }}
+{% endif %}

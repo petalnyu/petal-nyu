@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="icon" href="{{ 'assets/petal_logo.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="{{ '/' | relative_url }}">
+      <img class="logo-img" src="{{ '/assets/petal_logo.png' | relative_url }}">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="menu">
+      <a href="{{ '/events/' | relative_url }}">Events</a>
+      <a href="{{ '/resources/' | relative_url }}">Resources</a>
+      <a href="{{ '/team/' | relative_url }}">Team</a>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <!-- TODO: ADD A FOOTER WITH IMPORTANT LINKS -->
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
